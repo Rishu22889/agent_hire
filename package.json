@@ -1,0 +1,40 @@
+{
+  "name": "agenthire",
+  "version": "1.0.0",
+  "description": "AI-Powered Job Application System",
+  "main": "run.py",
+  "scripts": {
+    "setup": "chmod +x setup.sh && ./setup.sh",
+    "dev": "concurrently \"python run.py\" \"cd frontend && npm run dev\"",
+    "build": "cd frontend && npm run build",
+    "start": "python run.py",
+    "frontend": "cd frontend && npm run dev",
+    "backend": "python run.py",
+    "sandbox": "python sandbox/job_portal.py"
+  },
+  "keywords": [
+    "ai",
+    "job-application",
+    "automation",
+    "react",
+    "fastapi",
+    "python",
+    "javascript"
+  ],
+  "author": "AgentHire Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/agenthire.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/agenthire/issues"
+  },
+  "homepage": "https://github.com/yourusername/agenthire#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.24",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.18",
+    "concurrently": "^7.6.0"
+  }
+}
